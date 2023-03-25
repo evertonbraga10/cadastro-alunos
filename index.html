@@ -24,9 +24,7 @@
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
-            >
-              Novo aluno
-            </button>
+            >Novo aluno</button>
           </h2>
           <table class="table">
             <thead class="table-dark">
@@ -156,6 +154,42 @@
         </form>
       </div>
     </div>
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja apagar este item?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer">
+            <button 
+              id="confirmar" 
+              type="button" 
+              class="btn btn-success" 
+              data-bs-dismiss="modal" 
+              onclick="deletarAluno()">Sim</button>
+            <button 
+              type="button" 
+              class="btn btn-danger" 
+              data-bs-dismiss="modal">Não</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="alerta" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Aviso:</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body"></div>
+      </div>
+    </div>
+    
 
     <!-- JS BOOTSTRAP -->
     <script
