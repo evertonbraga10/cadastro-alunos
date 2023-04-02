@@ -26,6 +26,11 @@
               aria-controls="offcanvasRight"
             >Novo aluno</button>
           </h2>
+
+          <div class="d-flex mb-3 align-items-center">
+            Busca: <input onkeyup="pesquisa()" id="busca" type="text" class="ms-3 form-control" placeholder="Digite um nome">
+          </div>
+          
           <table class="table">
             <thead class="table-dark">
               <tr>
@@ -159,7 +164,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja apagar este item?</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja mesmo apagar?</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-footer">

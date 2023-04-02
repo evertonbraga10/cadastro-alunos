@@ -39,6 +39,25 @@ function listarAlunos()
     }); 
 } listarAlunos();
 
+function pesquisa()
+{
+    let lista_tr = document.querySelectorAll("tbody tr");
+    if(busca.value.length > 2){
+        lista_tr.forEach((tr) => {
+            if(tr.textContent.toLowerCase().search(busca.value.toLowerCase()) < 0){
+                tr.style.display = "none";
+            }else{
+                tr.style.display = "table-row";
+            }
+        })
+    }else{
+        lista_tr.forEach((tr) => {
+            tr.style.display = "table-row";
+        })
+    }
+    
+}
+
 function adicionarAluno()
 {
     event.preventDefault();
